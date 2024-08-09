@@ -13,12 +13,15 @@
     <script src="js/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/swiper.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -27,8 +30,88 @@
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
   </head>
   <body>
-    <div>test</div>
+    <div class="main_wrap">
+      <div class="header">
+        <div class="inner">
+          <a href="/" class="logo">
+            <img src="/img/logo.svg" alt="" />
+          </a>
+          <div class="right_box">
+            <a href="/" class="on"> HOME </a>
+            <a href="/"> Projects </a>
+          </div>
+        </div>
+      </div>
+      <div class="profile_wrap">
+        <div class="gallery">
+          <div class="swiper-container gallery-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/profile_big.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/profile_big.png" alt="" />
+              </div>
+            </div>
+            <div class="profile-button-prev"></div>
+            <div class="profile-button-next"></div>
+          </div>
+
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/profile_small.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/profile_small.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile_dsc">
+          <h4>프론트엔드 개발자 <b>김대윤</b>입니다.</h4>
+          <div class="user_info">
+            <div class="flex_row">
+              <p>1994.08.01</p>
+              <span></span>
+              <p>010-9073-8086</p>
+              <span></span>
+              <p>reodbs@nate.com</p>
+            </div>
+            <p>어쩌구 저쩌구 개발자 바보야 저는 왕달곰이어쩌구 저쩌구 개발자</p>
+          </div>
+          <div class="common_dsc">
+            <h5>기술 스택</h5>
+            <div class="skill">
+              <div>
+                <img src="/img/skill_react.svg" alt="" />
+                <p>React</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var sliderThumbnail = new Swiper(".gallery-thumbs", {
+          slidesPerView: "auto",
+          freeMode: true,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          spaceBetween: 16,
+        });
+        var slider = new Swiper(".gallery-slider", {
+          navigation: {
+            nextEl: ".profile-button-next",
+            prevEl: ".profile-button-prev",
+          },
+          thumbs: {
+            swiper: sliderThumbnail,
+          },
+        });
+      </script>
+    </div>
   </body>
 </html>

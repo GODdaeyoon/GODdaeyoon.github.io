@@ -60,7 +60,6 @@
   flex-direction: row;
   gap: 100px;
 }
-
 .profile_wrap .gallery {
   width: 100%;
   max-width: 428px;
@@ -133,6 +132,7 @@
   line-height: 24px;
 }
 
+/*# sourceMappingURL=main.css.map */
 
 .profile_wrap .profile_dsc h4 b {
   color: #498aff;
@@ -142,16 +142,18 @@
   margin-top: 10px;
 }
 
-.profile_wrap .user_info .flex_row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.profile_wrap {
+  .user_info {
+    .flex_row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    span {
+      width: 1px;
+      height: 12px;
+      background-color: #858585;
+      margin: 0 10px;
+    }
+  }
 }
-.profile_wrap .user_info span {
-  width: 1px;
-  height: 12px;
-  background-color: #858585;
-  margin: 0 10px;
-}
-
-/*# sourceMappingURL=main.css.map */

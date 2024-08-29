@@ -321,6 +321,15 @@
 .project_wrap .content_wrap .on .abs {
   background-color: #498aff;
 }
+.project_wrap .content_wrap .web-class .abs {
+  color: red;
+}
+.project_wrap .content_wrap .app-class .abs {
+  color: yellow;
+}
+.project_wrap .content_wrap .web-app-class .abs {
+  color: green;
+}
 .project_wrap .publish {
   display: flex;
   flex-direction: row;

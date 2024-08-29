@@ -331,6 +331,21 @@
         background-color: #498aff;
       }
     }
+    .web-class {
+      .abs {
+        color: red;
+      }
+    }
+    .app-class {
+      .abs {
+        color: yellow;
+      }
+    }
+    .web-app-class {
+      .abs {
+        color: green;
+      }
+    }
   }
   .publish {
     display: flex;

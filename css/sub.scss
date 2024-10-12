@@ -16,10 +16,12 @@
 
 .sub_visual {
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: flex;
   align-items: center;
-  background-color: #eee;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   .text_box {
     max-width: 1200px;
     width: 100%;
@@ -30,14 +32,14 @@
       font-size: 40px;
       font-weight: bold;
       letter-spacing: -0.02em;
-      color: #202020;
+      color: #fff;
     }
     p {
       margin-top: 12px;
       font-size: 16px;
       font-weight: 400;
       letter-spacing: -0.02em;
-      color: #969696;
+      color: #fff;
     }
   }
   .desc {
@@ -51,7 +53,7 @@
         width: 120px;
         font-size: 16px;
         font-weight: bold;
-        color: #202020;
+        color: #fff;
         letter-spacing: -0.02em;
       }
       > div {
@@ -109,7 +111,7 @@
         font-size: 16px;
         font-weight: 400;
         letter-spacing: -0.02em;
-        color: #202020;
+        color: #fff;
       }
     }
   }
@@ -236,6 +238,20 @@
     background: url("/img/project_visual_prev.png") center / cover;
     cursor: pointer;
     z-index: 120;
+  }
+}
+
+.project_publish {
+  margin: 100px 0;
+  position: relative;
+  .inner {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
   }
 }
 

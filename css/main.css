@@ -240,6 +240,7 @@
 }
 .project_wrap .content_wrap a {
   display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -251,6 +252,7 @@
   cursor: pointer;
 }
 .project_wrap .content_wrap a img {
+  max-width: 100%;
   opacity: 0.5;
 }
 .project_wrap .content_wrap a .text p {

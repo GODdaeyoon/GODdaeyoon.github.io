@@ -111,48 +111,52 @@
       <div
         class="sub_visual"
         style="
-          background: url('/img/subvisual_gionbio.png') no-repeat center / cover;
+          background: url('/img/subvisual_popcorn.png') no-repeat center / cover;
         "
       >
         <div class="text_box">
           <div class="title">
-            <h2>지오엔바이오</h2>
+            <h2>팝콘TV</h2>
+            <p>온라인 라이브 스트리밍 플랫폼</p>
           </div>
           <div class="desc">
             <div class="common_dsc">
               <h5>기술 스택</h5>
               <div class="skill">
-                <div class="html">
-                  <!-- <img src="/img/skill_react.png" alt="" /> -->
-                  <p>HTML5</p>
+                <div class="react">
+                  <img src="/img/skill_react.png" alt="" />
+                  <p>React</p>
                 </div>
-                <div class="css">
-                  <p>CSS</p>
+                <div class="ts">
+                  <img src="/img/skill_ts.svg" alt="" />
+                  <p>TypeScript</p>
                 </div>
-                <div class="Javasciprt">
-                  <p>Javascript</p>
+                <div class="next">
+                  <img src="/img/skill_next.svg" alt="" />
+                  <p>Next.js</p>
                 </div>
-                <div class="jquery">
-                  <p>jquery</p>
+                <div class="tw">
+                  <img src="/img/skill_tw.svg" alt="" />
+                  <p>Tailwind</p>
                 </div>
               </div>
             </div>
             <div class="common_dsc">
               <h5>작업 형태</h5>
               <div>
-                <p class="common_text">WEB 랜딩페이지</p>
+                <p class="common_text">WEB</p>
               </div>
             </div>
             <div class="common_dsc">
               <h5>기간</h5>
               <div>
-                <p class="common_text">8시간</p>
+                <p class="common_text">2022.11.23 ~ 2022.12.31</p>
               </div>
             </div>
             <div class="common_dsc">
               <h5>기여도</h5>
               <div>
-                <p class="common_text">100%</p>
+                <p class="common_text">20%</p>
               </div>
             </div>
           </div>
@@ -161,9 +165,9 @@
       <div class="road_map">
         <div class="inner">
           <img src="/img/home.svg" alt="" />
-          <p>비젠소프트</p>
+          <p>그로테스큐</p>
           <img src="/img/road_arrow.svg" alt="" />
-          <p>지오엔바이오</p>
+          <p>팝콘TV</p>
         </div>
       </div>
       <div class="project_desc">
@@ -171,19 +175,54 @@
           <h5>프로젝트 개요</h5>
           <div class="text_box">
             <p>
-              <b>HTML5, CSS, javascript, jquery</b>를 사용하여 만든 풀 반응형
-              랜딩페이지
+              입사 후 첫 프로젝트였으며, React, Next.js, TypeScript를 활용한
+              스트리밍 홈페이지를 개발 중이었습니다. <br />
+              프로젝트는 거의 완성된 상태였지만, 회사 사정으로 인해 중도 계약
+              해지를 하게 되었습니다. <br />
+              이 경험을 통해 React와 Next.js에 대한 이해를 크게 높일 수 있는
+              기회였으며, TypeScript를 처음 사용해본 새로운 환경에서 변수를
+              명확히 정의하고 컴파일 에러를 방지하는 방법을 배울 수 있었습니다.
             </p>
           </div>
         </div>
       </div>
-      <div class="project_publish">
+      <div class="project_slide">
         <div class="inner">
-          <div class="img_box">
-            <img src="/img/img03_01.jpg" alt="" />
+          <div class="slide_box">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="/img/project_slide.png" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <img src="/img/project_slide02.png" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <img src="/img/project_slide03.png" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <img src="/img/project_slide.png" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <img src="/img/project_slide03.png" alt="" />
+              </li>
+            </ul>
           </div>
         </div>
+        <div class="project_visual_next"></div>
+        <div class="project_visual_prev"></div>
       </div>
+      <script>
+        var project_visual_sldie = new Swiper(".project_slide .slide_box", {
+          slidesPerView: 3,
+          initialSlide: 1,
+          centeredSlides: true,
+          loop: true,
+          navigation: {
+            nextEl: ".project_visual_next",
+            prevEl: ".project_visual_prev",
+          },
+        });
+      </script>
       <div id="footer">copyright 2024 Goddaeyoon</div>
     </div>
   </body>

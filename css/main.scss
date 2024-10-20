@@ -17,6 +17,11 @@
 .profile_wrap .gallery {
   width: 100%;
   max-width: 428px;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
 }
 
 .profile_wrap .gallery-thumbs .swiper-slide {
@@ -208,6 +213,26 @@
   border-color: #19b4ba !important;
 }
 
+.profile_wrap .html {
+  border-color: #f16529 !important;
+}
+
+.profile_wrap .css {
+  border-color: #2965f1 !important;
+}
+
+.profile_wrap .scss {
+  border-color: #c76495 !important;
+}
+
+.profile_wrap .javascript {
+  border-color: #fbd725 !important;
+}
+
+.profile_wrap .jqueru {
+  border-color: #1266a9 !important;
+}
+
 .project_wrap {
   max-width: 1200px;
   width: 100%;
@@ -291,7 +316,6 @@
         right: -12px;
         height: 24px;
         padding: 0 6px;
-        background-color: #c1c1c1;
         border-radius: 4px;
         font-size: 14px;
         font-weight: bold;
@@ -329,23 +353,24 @@
         border-color: #05d9ff;
         color: #05d9ff;
       }
-      .abs {
-        background-color: #498aff;
+      .io {
+        border-color: #4889ff;
+        color: #4889ff;
       }
     }
     .web-class {
       .abs {
-        color: red;
+        background: #9acf61;
       }
     }
     .app-class {
       .abs {
-        color: yellow;
+        background: #498aff;
       }
     }
     .web-app-class {
       .abs {
-        color: green;
+        background: linear-gradient(90deg, #9acf61, #498aff);
       }
     }
   }

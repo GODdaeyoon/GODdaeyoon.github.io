@@ -304,5 +304,8 @@
   color: #333;
   letter-spacing: -0.02em;
 }
+.project_details .contents.mobile .popup {
+  width: 30%;
+}
 
 /*# sourceMappingURL=sub.css.map */

@@ -108,6 +108,18 @@
 .sub_visual .desc .common_dsc .tw {
   border-color: #19b4ba !important;
 }
+.sub_visual .desc .common_dsc .html {
+  border-color: #f16529 !important;
+}
+.sub_visual .desc .common_dsc .css {
+  border-color: #2965f1 !important;
+}
+.sub_visual .desc .common_dsc .javascript {
+  border-color: #fbd725 !important;
+}
+.sub_visual .desc .common_dsc .jqueru {
+  border-color: #1266a9 !important;
+}
 .sub_visual .desc .common_dsc .common_text {
   font-size: 16px;
   font-weight: 400;

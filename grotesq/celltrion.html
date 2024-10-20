@@ -39,10 +39,9 @@
       <div class="header">
         <div class="inner">
           <a href="/" class="logo">
-            <img src="/img/logo.svg" alt="" />
+            <img src="/img/logo.png" alt="" />
           </a>
           <div class="right_box">
-            <a href="/" class="on"> HOME </a>
             <a href="/" class="projects"> Projects </a>
           </div>
         </div>
@@ -52,13 +51,13 @@
               <h2>그로테스큐</h2>
               <div class="contents">
                 <a href="/grotesq/88tv.html">88TV</a>
-                <a href="/grotesq/popcorn.html">팝콘TV</a>
                 <a href="/grotesq/temup.html">템업</a>
                 <a href="/grotesq/celltrion.html">셀트리온</a>
                 <a href="/grotesq/dm.html">디엠 성형외과</a>
                 <a href="/grotesq/bid.html">비등비딩</a>
                 <a href="/grotesq/collabo.html">콜라보매니저</a>
                 <a href="/grotesq/daldabang.html">달다방</a>
+                <a href="/grotesq/popcorn.html">팝콘TV</a>
               </div>
             </div>
             <div class="company">
@@ -312,6 +311,22 @@
         });
       </script>
       <div id="footer">copyright 2024 Goddaeyoon</div>
+      <div class="top_btn">
+        <a href="javascript">
+          <img src="/img/top.svg" alt="" />
+        </a>
+      </div>
+      <script>
+        $(".top_btn a").on("click", function () {
+          $("html, body").animate(
+            {
+              scrollTop: 0,
+            },
+            400
+          );
+          return false;
+        });
+      </script>
     </div>
   </body>
 </html>

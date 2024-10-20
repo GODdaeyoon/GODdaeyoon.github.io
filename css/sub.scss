@@ -323,3 +323,10 @@
     }
   }
 }
+
+.top_btn {
+  position: fixed;
+  z-index: 80;
+  right: 100px;
+  bottom: 100px;
+}

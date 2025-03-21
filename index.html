@@ -35,7 +35,77 @@
   </head>
   <body>
     <div class="main_wrap">
-      <!--#include file="header.html" -->
+      <div class="header">
+        <div class="inner">
+          <a href="/" class="logo">
+            <img src="/img/logo.png" alt="" />
+          </a>
+          <div class="right_box">
+            <a href="/" class="projects"> Projects </a>
+          </div>
+        </div>
+        <div class="depth02">
+          <div class="depth02_wrap">
+            <div class="company">
+              <h2>그로테스큐</h2>
+              <div class="contents">
+                <a href="/grotesq/88tv.html">88TV</a>
+                <a href="/grotesq/temup.html">템업</a>
+                <a href="/grotesq/celltrion.html">셀트리온</a>
+                <a href="/grotesq/dm.html">디엠 성형외과</a>
+                <a href="/grotesq/bid.html">비등비딩</a>
+                <a href="/grotesq/collabo.html">콜라보매니저</a>
+                <a href="/grotesq/daldabang.html">달다방</a>
+                <a href="/grotesq/popcorn.html">팝콘TV</a>
+              </div>
+            </div>
+            <div class="company">
+              <h2>개인 프로젝트</h2>
+              <div class="contents">
+                <a href="/project/gookie.html">구키 Gookie</a>
+              </div>
+            </div>
+            <div class="company">
+              <h2>비젠소프트</h2>
+              <div class="contents">
+                <a href="/vizen/igram.html">아이그램 성형외과</a>
+                <a href="/vizen/chungbuk.html"
+                  >충청북도 지역 장애인 <br />
+                  보건의료센터</a
+                >
+                <a href="/vizen/seocho.html">서초구 마을 공동체 지원센터</a>
+                <a href="/vizen/meta.html">메타피스 렌탈샵</a>
+                <a href="/vizen/brinks.html">브링스 글로벌</a>
+                <a href="/vizen/rootplant.html">서울 루트플란트 치과</a>
+                <a href="/vizen/koreapet.html">한국 반려동물 산업 협회</a>
+                <a href="/vizen/smartpower.html">스마트파워 시스템</a>
+                <a href="/vizen/estc.html">이에스티씨</a>
+                <a href="/vizen/seoulhigh.html">서울고28회동기회</a>
+                <a href="/vizen/beatnine.html">비트나인</a>
+                <a href="/vizen/woonam.html">우남</a>
+              </div>
+            </div>
+            <div class="company">
+              <h2></h2>
+              <div class="contents">
+                <a href="/vizen/kmparts.html">케이엠파츠</a>
+                <a href="/vizen/soombody.html">숨은바디라인</a>
+                <a href="/vizen/gionbio.html">지오앤바이오</a>
+                <a href="/vizen/nadoc.html">웝코퍼레이션</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(".header .projects").on("mouseenter", function () {
+          $(".depth02").addClass("on");
+        });
+
+        $(".header").on("mouseleave", function () {
+          $(".depth02").removeClass("on");
+        });
+      </script>
       <div class="profile_wrap">
         <div class="gallery">
           <div class="swiper-container gallery-slider">
